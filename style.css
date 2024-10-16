@@ -1,0 +1,503 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-image: url('pikaso_edit_mosaic.jpeg');
+}
+span{
+    margin-left: 10px;
+    color: purple;
+    text-decoration: underline;
+    font-size: large;
+    font-style: italic;
+    font-family: cursive;
+    position: absolute;
+    margin-right: 60em;
+    object-fit: inherit;
+
+}
+.menu{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    position: fixed;
+}
+.head{
+    margin-top: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.nav{
+    text-decoration: none;
+    color: rgb(241, 9, 241);
+    font-weight: bold;
+    font-size: large;
+}
+.nav:hover {
+    text-decoration: underline;
+}
+.hyphen{
+    font-size: xx-large;
+    font-weight: bolder;
+    display: inline-block;
+    margin-top: 2.5em;
+    margin-left: 7em;
+    transform: scale(12.5, 1);
+}
+bold{
+    color: purple;    
+}
+.wrapper{
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+}
+.page-content{
+  flex: 1;
+}
+.typing-container{
+   width: 30rem;
+   overflow: hidden;
+   white-space: nowrap;
+}
+.typing-effect{
+   margin-left: 5.5em;
+   white-space: nowrap;
+   overflow: hidden;
+   border-right: 1px solid black;
+   animation: typing 1s steps(20) 0.5s forwards, blink-cursor 0.75s;
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-cursor {
+    50% {
+      border-color: transparent;
+    }
+    100% {
+      border-color:black;
+    }
+    }
+    .mypic{
+      display: block;
+     margin: 0 auto;
+     position: absolute;
+     top: 5.5em;
+     margin-left: 3rem;
+     border: dashed 2px black;
+     border-radius: 150px;
+     background: linear-gradient(75deg, purple, black);
+     width: 300px;
+     height: 300px;
+    }
+    .prelude{
+      font-size: 18px;
+      text-align: center;
+      margin-left: 3em;
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .right-items{
+      float: right;
+      clear: right;
+      margin-right: 6rem;
+      margin-top: -18rem;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    #clickButton{
+      border: none;
+      border-bottom: #fff 3px solid;
+      background-color: #d9aca6;
+      color: #fff;
+      cursor: pointer;
+    }
+    .my-work{
+      padding: 20px;
+      margin-left: 10em;
+      border: 3px solid black;
+      width: 100px;
+      font-size: 22px;
+    }
+    .home{
+      border-bottom: #000 3px solid;
+      border-right: #000 3px solid;
+      background-color: #b9b7b6;
+      font-size: large;
+      color: #000;
+      cursor: pointer;
+      font-weight: bold;
+      position: absolute;
+      margin-top: -1em;
+    }
+    .work-footer {
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+      margin-top: 0.2em;
+      box-sizing: border-box;
+      height: 95px;
+      width: 100%;
+    }
+    .work-info{
+      text-align: center;
+      font-size: 21px;
+      color: #000;
+      margin-top: -1.8em;
+      background-image: url('pikaso_edit_mosaic.jpeg');
+      line-height: 2.5em;
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .navigate{
+      text-decoration: underline;
+    }
+    .plus{
+      color: #fff;
+    }
+    .range{
+      font-size: small;
+    }
+    .foot{
+      display: inline-flex;
+      gap: 12em;
+      margin-left: 9em;
+    }
+    .port-name{
+      font-size: 60px;
+      text-shadow: 2px 2px 5px  rgb(13, 14, 13);
+      text-align: center;
+      margin: 2px;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .footer{
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      margin-top: 0.2em;
+      bottom: 0;
+      box-sizing: border-box;
+      position: absolute;
+      height: 84px;
+      width: 100%;
+      }
+      .copyright{
+        font-size: small;
+        margin-top: 1em;
+      }
+    .icons{
+      height: 30px;
+      width: 30px;
+      margin-left: -6em;
+      margin-top: 1em;
+      object-fit: inherit;
+    }
+    .end{
+      margin-left: 5em;
+    }
+    .end-section{
+     background-color: #000;
+   }
+   .grid{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    background: linear-gradient(360deg, #fff , #d9aca6, #fff, #d9aca6);
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+   }
+   .port{
+    margin-top: 4rem;
+    height: 6.8em;
+   }
+   .port-icons{
+    margin-top: 1.5em;
+   }
+   .home-port{
+    margin-top: 1rem;
+    margin-left: 5px;
+   }
+   .cfc{
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: 80%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    filter:opacity(100%) saturate(100%);
+    margin: 2.5rem;
+    object-fit: inherit;
+   }
+   .showPhotosText{
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background: linear-gradient(360deg, #fff , #0000ff, #fff, #0000ff);
+    color: #fff;
+    font-size: 30px;
+    font-weight: 100;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
+    height: 80%;
+    width: 80%;
+    margin: 2.5rem;
+    text-align: center;
+    z-index: 2;
+    transition: opacity 0.5s ease-in;
+    display: flex;
+    align-items: center;
+  }
+  .photos-container{
+    background: linear-gradient(360deg, #fff , #0000ff, #fff, #0000ff);
+    position: relative;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 2fr);
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+  }
+  .photos-container:hover .showPhotosText {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+  }
+  .cfc.visible{
+    opacity: 1;
+  }
+  .contact-section{
+    max-width: 700px;
+    margin-left: 16rem;
+    margin-top: 3rem;
+    position: absolute;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px #1a73e8;
+  }
+  .fill-out{
+    line-height: 1.6;
+    color: #666;
+  }
+  .contact-info{
+    margin-top: 1rem;
+
+  }
+  .contact-info a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #1a73e8;
+    text-decoration: none;
+  }
+  .contact-info a:hover{
+    text-decoration: underline;
+  }
+  .contact-form{
+    display: flex;
+    flex-direction: column;
+  }
+  input, textarea{
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: 1px solid #000;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #000;
+    box-shadow: 0 0 5px #000;
+  }
+   textarea {
+    resize: vertical;
+    width: 270px;
+   }
+  .contact-button{
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .contact-button:hover{
+    background-color: #135cb5;
+  }
+
+  @media screen and (max-width: 768px) {
+    
+    .mypic{
+     margin-left: 20rem;
+    }
+    .hyphen{
+      margin-top: 5rem;
+      margin-left: 3rem;
+      margin-bottom: -2rem;
+      transform: scale(6.5, 1);
+    }
+    .prelude{
+      margin-left: 3px;
+      width: 18rem;
+      white-space: normal;
+      overflow: break-word;
+      word-break: break-word;
+    }
+    .typing-effect{
+      margin-top: 1rem;
+      margin-left: 1rem;
+    }
+    .right-items {
+      margin-right: 11rem;
+      text-align: center;
+
+      margin-top: 3rem;
+    }
+
+    .foot {
+        gap: 15em;
+        margin-left: 7rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-port {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .footer{
+      position: relative;
+      max-width: 100%;
+    }
+    }
+
+    @media screen and (max-width: 622px) {
+      .footer{
+        width: 40rem;
+      }
+    }
+@media (min-width: 900px) {
+  .mypic {
+      margin-left: 33rem;
+      width: 300px;
+      height: 300px;
+  }
+  .mypic{
+    display: block;
+    padding: 0;
+    height: auto;
+    margin-left: 0 auto;
+    max-width: 100%;
+  }
+  .right-items {
+      margin-right: 6rem;
+      margin-top: -18rem;
+  }
+
+  .foot {
+      gap: 12em;
+      margin-left: 9em;
+  }
+
+  .grid {
+      grid-template-columns: repeat(3, 2fr);
+  }
+
+  .footer, .work-footer {
+      height: 95px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .wrapper, .page-content, .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mypic{
+    margin-left: 5rem;
+    margin-top: -1rem;
+  }
+  .prelude{
+    margin-left: 6rem;
+    font-size: 16px;
+  }
+  .hyphen{
+    z-index: 2;
+    position: absolute;
+    display: inline-block;
+    margin-left: 4.5rem;
+    margin-top: 21rem;
+  }
+  .typing-effect{
+    margin-top: 22rem;
+    margin-left: 1rem;
+  }
+  .right-items{
+    margin-top: 2rem;
+    margin-right: 7rem;
+    text-align: center;
+  }
+  .foot{
+    margin-left: 4rem;
+    gap: 12rem;
+  }
+  .footer{
+    height: 84px;
+    position: relative;
+    margin-bottom: 0rem;
+    justify-content: end;
+  }
+  .port{
+    width: 25rem;
+    height: 6rem;
+  }
+  .grid{
+    flex-direction: column;
+    display: block;
+  }
+  .photos-container{
+    height: 14rem;
+  }
+  .port-name{
+    font-size: 40px;
+  }
+  .work-info {
+    height: 32rem;
+    width: 23rem;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.7em;
+  }
+  .my-work{
+    padding: 20px;
+    margin-left: 1em;
+    width: 100px;
+    font-size: 18px;
+  }
+  .info{
+    height: 34rem;
+    line-height: 1.6em;
+  }
+  .work-footer{
+    height: 86px;
+    position: absolute;
+    justify-content: end;
+    margin-bottom: -10rem;
+
+  }
+  .contact-section{
+    text-align: center;
+    width: 250px;
+    padding-bottom: 5rem;
+    height: 31rem;
+    margin-left: 1.8rem;
+  }
+}
