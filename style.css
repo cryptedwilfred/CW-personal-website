@@ -1,4 +1,5 @@
 html, body {
+  color: #000;
   height: 100%;
   margin: 0;
   background-image: url('pikaso_edit_mosaic.jpeg');
@@ -30,6 +31,7 @@ span{
 }
 
 .nav{
+  cursor: pointer;
     text-decoration: none;
     color: rgb(241, 9, 241);
     font-weight: bold;
@@ -47,7 +49,7 @@ span{
     transform: scale(12.5, 1);
 }
 bold{
-    color: purple;    
+    color: rgb(65, 6, 65);    
 }
 .wrapper{
   display: grid;
