@@ -3,6 +3,7 @@ html, body {
   height: 100%;
   margin: 0;
   background-image: url('pikaso_edit_mosaic.jpeg');
+
 }
 span{
     margin-left: 10px;
@@ -187,7 +188,7 @@ bold{
       bottom: 0;
       box-sizing: border-box;
       position: absolute;
-      height: 84px;
+      height: 20.8%;
       width: 100%;
       }
       .copyright{
@@ -201,11 +202,11 @@ bold{
       margin-top: 1em;
       object-fit: inherit;
     }
-    .end{
-      margin-left: 5em;
-    }
     .end-section{
      background-color: #000;
+   }
+   .end{
+    margin-left: 10rem;
    }
    .grid{
     margin-top: 2rem;
@@ -377,13 +378,13 @@ bold{
 
     .footer{
       position: relative;
-      max-width: 100%;
+      width: 100%;
     }
     }
 
     @media screen and (max-width: 622px) {
       .footer{
-        width: 40rem;
+        width: 100%;
       }
     }
 @media (min-width: 900px) {
@@ -419,47 +420,75 @@ bold{
 }
 
 @media screen and (max-width: 480px){
+  body , .port-content{
+  overflow-x: hidden;
+  }
   .wrapper, .page-content, .footer {
     flex-direction: column;
     align-items: center;
   }
   .mypic{
-    margin-left: 5rem;
+    margin-left: 4rem;
+    width: 15rem;
+    height: 15rem;
     margin-top: -1rem;
   }
   .prelude{
-    margin-left: 6rem;
+    float: left;
     font-size: 16px;
+    margin-left: 3rem;
+    margin-top: -1rem;
+  }
+  .menu{
+    gap: 15px;
+    font-size: 2px;
+    margin-left: -6rem;
   }
   .hyphen{
     z-index: 2;
     position: absolute;
     display: inline-block;
     margin-left: 4.5rem;
-    margin-top: 21rem;
+    margin-top: 17rem;
   }
   .typing-effect{
-    margin-top: 22rem;
+    margin-top: 18rem;
     margin-left: 1rem;
   }
   .right-items{
-    margin-top: 2rem;
-    margin-right: 7rem;
+    margin-top: -1rem;
+    float: left;
+    margin-left: 3rem;
     text-align: center;
   }
   .foot{
-    margin-left: 4rem;
-    gap: 12rem;
+    margin-left: 5rem;
+    gap: 7rem;
   }
   .footer{
-    height: 84px;
-    position: relative;
-    margin-bottom: 0rem;
-    justify-content: end;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+  }
+  .end{
+    margin-bottom: 1rem;
+    margin-left: -1rem;
+  }
+  .copyright{
+    text-align: center; 
+    margin-left: -7rem; 
+  }
+  .about-copyright{
+    position: absolute;
+    margin-top: 4rem;
   }
   .port{
-    width: 25rem;
-    height: 6rem;
+    width: 100%;
+    padding-left: 6rem;
+    margin-top: 4rem;
+    margin-bottom: -1rem;
+  }
+  .port2{
+    margin-bottom: -1rem;
   }
   .grid{
     flex-direction: column;
@@ -471,12 +500,18 @@ bold{
   .port-name{
     font-size: 40px;
   }
+  .about-footer{
+    position: absolute;
+    height: 6rem;
+    text-align: center;
+    padding-left: 8rem;
+  }
   .work-info {
     height: 32rem;
     width: 23rem;
     text-align: center;
-    font-size: 18px;
-    line-height: 1.7em;
+    font-size: 21px;
+    line-height: 1.8em;
   }
   .my-work{
     padding: 20px;
@@ -486,14 +521,19 @@ bold{
   }
   .info{
     height: 34rem;
-    line-height: 1.6em;
+    line-height: 1.7em;
+  }
+  .about-home{
+    margin-top: 12rem;
+    position: absolute;
+
   }
   .work-footer{
-    height: 86px;
+    height: auto;
+    text-align: center;
+    padding-left: 7rem;
+    margin-top: 15rem;
     position: absolute;
-    justify-content: end;
-    margin-bottom: -10rem;
-
   }
   .contact-section{
     text-align: center;
