@@ -23,6 +23,7 @@ span{
     justify-content: center;
     gap: 25px;
     position: fixed;
+    z-index: 1;
 }
 .head{
     margin-top: 25px;
@@ -118,7 +119,7 @@ bold{
     #clickButton{
       border: none;
       border-bottom: #fff 3px solid;
-      background-color: #d9aca6;
+      background: linear-gradient(purple , black);
       color: #fff;
       cursor: pointer;
     }
@@ -128,17 +129,6 @@ bold{
       border: 3px solid black;
       width: 100px;
       font-size: 22px;
-    }
-    .home{
-      border-bottom: #000 3px solid;
-      border-right: #000 3px solid;
-      background-color: #b9b7b6;
-      font-size: large;
-      color: #000;
-      cursor: pointer;
-      font-weight: bold;
-      position: absolute;
-      margin-top: -1em;
     }
     .work-footer {
       background-color: black;
@@ -164,6 +154,7 @@ bold{
     }
     .plus{
       color: #fff;
+      font-size: 25px;
     }
     .range{
       font-size: small;
@@ -224,10 +215,7 @@ bold{
    .port-icons{
     margin-top: 1.5em;
    }
-   .home-port{
-    margin-top: 1rem;
-    margin-left: 5px;
-   }
+
    .cfc{
     position: absolute;
     display: block;
@@ -279,6 +267,7 @@ bold{
   .contact-section{
     max-width: 700px;
     margin-left: 16rem;
+    justify-content: center;
     margin-top: 3rem;
     position: absolute;
     padding: 2rem;
@@ -371,11 +360,6 @@ bold{
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .home-port {
-        margin-top: 0.5rem;
-        font-size: 0.9rem;
-    }
-
     .footer{
       position: relative;
       width: 100%;
@@ -421,6 +405,8 @@ bold{
 
 @media screen and (max-width: 480px){
   body , .port-content{
+    height: 100%;
+    margin: 0;
   overflow-x: hidden;
   }
   .wrapper, .page-content, .footer {
@@ -435,14 +421,16 @@ bold{
   }
   .prelude{
     float: left;
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 3rem;
-    margin-top: -1rem;
+    margin-top: -0.5rem;
   }
   .menu{
-    gap: 15px;
-    font-size: 2px;
+    gap: 10px;
     margin-left: -6rem;
+  }
+  .nav{
+    font-size: small;
   }
   .hyphen{
     z-index: 2;
@@ -452,14 +440,14 @@ bold{
     margin-top: 17rem;
   }
   .typing-effect{
+    font-size: 21px;
     margin-top: 18rem;
     margin-left: 1rem;
   }
   .right-items{
     margin-top: -1rem;
-    float: left;
-    margin-left: 3rem;
-    text-align: center;
+    display: block;
+    transform: translate(10%, 2%);
   }
   .foot{
     margin-left: 5rem;
@@ -500,6 +488,9 @@ bold{
   .port-name{
     font-size: 40px;
   }
+  .port-copyright{
+    margin-top: 2rem;
+  }
   .about-footer{
     position: absolute;
     height: 6rem;
@@ -510,7 +501,7 @@ bold{
     height: 32rem;
     width: 23rem;
     text-align: center;
-    font-size: 21px;
+    font-size: 17px;
     line-height: 1.8em;
   }
   .my-work{
@@ -523,11 +514,6 @@ bold{
     height: 34rem;
     line-height: 1.7em;
   }
-  .about-home{
-    margin-top: 12rem;
-    position: absolute;
-
-  }
   .work-footer{
     height: auto;
     text-align: center;
@@ -536,10 +522,15 @@ bold{
     position: absolute;
   }
   .contact-section{
-    text-align: center;
     width: 250px;
     padding-bottom: 5rem;
     height: 31rem;
     margin-left: 1.8rem;
+
+  }
+}
+@media (prefers-color-scheme: dark){
+  body {
+    color: #000;
   }
 }
